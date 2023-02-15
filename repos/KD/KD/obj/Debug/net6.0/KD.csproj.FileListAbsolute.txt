@@ -1,0 +1,15 @@
+C:\Users\Admiuser\source\repos\KD\KD\bin\Debug\net6.0\KD.exe
+C:\Users\Admiuser\source\repos\KD\KD\bin\Debug\net6.0\KD.deps.json
+C:\Users\Admiuser\source\repos\KD\KD\bin\Debug\net6.0\KD.runtimeconfig.json
+C:\Users\Admiuser\source\repos\KD\KD\bin\Debug\net6.0\KD.dll
+C:\Users\Admiuser\source\repos\KD\KD\bin\Debug\net6.0\KD.pdb
+C:\Users\Admiuser\source\repos\KD\KD\obj\Debug\net6.0\KD.csproj.AssemblyReference.cache
+C:\Users\Admiuser\source\repos\KD\KD\obj\Debug\net6.0\KD.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admiuser\source\repos\KD\KD\obj\Debug\net6.0\KD.AssemblyInfoInputs.cache
+C:\Users\Admiuser\source\repos\KD\KD\obj\Debug\net6.0\KD.AssemblyInfo.cs
+C:\Users\Admiuser\source\repos\KD\KD\obj\Debug\net6.0\KD.csproj.CoreCompileInputs.cache
+C:\Users\Admiuser\source\repos\KD\KD\obj\Debug\net6.0\KD.dll
+C:\Users\Admiuser\source\repos\KD\KD\obj\Debug\net6.0\refint\KD.dll
+C:\Users\Admiuser\source\repos\KD\KD\obj\Debug\net6.0\KD.pdb
+C:\Users\Admiuser\source\repos\KD\KD\obj\Debug\net6.0\KD.genruntimeconfig.cache
+C:\Users\Admiuser\source\repos\KD\KD\obj\Debug\net6.0\ref\KD.dll
