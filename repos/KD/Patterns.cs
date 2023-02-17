@@ -840,6 +840,456 @@ namespace KD
         }
 
 
+        public static void FillHollowDiamond()
+        {
+            Console.WriteLine("Enter a Row");
+            int row = Convert.ToInt32(Console.ReadLine());
+            
+            for (int i = 1; i <= row; i++)
+            {
+                for (int j = 1; j <= row - i; j++)
+                {
+                    Console.Write(" ");
+                }
+                for (int k = 1; k <= 2 * i - 1; k++)
+                {
+                    if (k == 1 || k == 2 * i - 1)
+                    {
+                        Console.Write("*");
+                    }
+                    else
+                    {
+                        
+                        Console.Write(i-1);
+                    }
+
+                }
+                Console.WriteLine();
+            }
+
+            for (int i = row-1; i >= 1; i--)
+            {
+                for (int j = 1; j <= row - i; j++)
+                {
+                    Console.Write(" ");
+                }
+                for (int k = 1; k <= 2 * i - 1; k++)
+
+                {
+                    if (k == 1 || k == 2 * i - 1)
+                    {
+                        Console.Write("*");
+                    }
+                    else
+                    {
+                        Console.Write(i-1);
+                    }
+                }
+                Console.WriteLine();
+            }
+        }
+
+        public static void KshapPattern()
+        {
+            Console.WriteLine("Enter a Row");
+            int row = Convert.ToInt32(Console.ReadLine());
+            int k = -1;
+
+
+
+            for (int i = 1; i <= row; i++)
+            {
+                for (int j = 1; j <= row; j++)
+                {
+                    if (j == 1 || i + j == 5 || i > 4 && i + j == k)
+                    {
+                        Console.Write("kk");
+                    }
+                    else
+                    {
+                        Console.Write("  ");
+                    }
+                }
+
+                Console.WriteLine();
+                k = k + 2;
+            }
+        }
+
+        public static void KLogic()
+        {
+
+            Console.WriteLine("Enter a Row");
+            int row = Convert.ToInt32(Console.ReadLine());
+          
+
+            for (int i = 1; i <= row-1; i++)
+            {
+                for (int j = row; j >= i; j--)
+                {
+                    if (i==1&&j==2 || i == 1 && j == 3|| i == 1 && j == 4)
+                    {
+                        Console.Write(" ");
+                    }
+                    else if(i == 1 || j == row || j == i || i == row||j==1)
+                    {
+                        Console.Write("k");
+                    }
+                    else
+                    {
+                        Console.Write(" ");
+                    }
+
+
+                }
+                Console.WriteLine();
+            }
+
+            for (int i = row; i >= 1; i--)
+            {
+                for (int j = row; j >= i; j--)
+                {
+                    if (i == 1 && j == 2 || i == 1 && j == 3 || i == 1 && j == 4)
+                    {
+                        Console.Write(" ");
+
+                    }
+                    else if (i == 1 || j == row || j == i || i == row||j==1 )
+                    {
+                        Console.Write("k");
+                    }
+                    else
+                    {
+                        Console.Write(" ");
+                    }
+
+
+                }
+                Console.WriteLine();
+            }
+
+        }
+
+        public static void SolidHalfDiamoundUsingstars()
+        {
+            Console.WriteLine("Enter a Row");
+            int row = Convert.ToInt32(Console.ReadLine());
+
+            for(int i=1; i <= row; i++)
+            {
+                for(int j = 1; j <= i; j++)
+                {
+                    Console.Write("*"); 
+                }
+                Console.WriteLine();
+            }
+            for (int i = row-1; i >= 1; i--)
+            {
+                for (int j = 1; j <= i; j++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+            }
+        }
+        
+        public static void DifferentTypeOfSolidHalfDiamound()
+        {
+            Console.WriteLine("Enter a Row");
+            int row = Convert.ToInt32(Console.ReadLine());
+
+            for(int i=1; i <= row; i++)
+            {
+                for(int j = 1; j <= i; j++)
+                {
+                    if (i >= 10)
+                    {
+                        Console.Write(i+" ");
+                    }
+                    else
+                    {
+                        Console.Write(i+"  ");
+                    }
+                    
+                }
+                Console.WriteLine();
+            }
+            for (int i = row-1; i >= 1; i--)
+            {
+                for (int j = 1; j <= i; j++)
+                {
+                    if(i >= 10)
+                    {
+                        Console.Write(i + " ");
+                    }
+                    else
+                    {
+                        Console.Write(i+"  ");
+                    }
+
+                }
+                Console.WriteLine();
+            }
+        }
+
+        public static void HollowDiamondInscribedInARectangle()
+        {
+            Console.WriteLine("Enter a Row");
+            int row = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 1; i <= row; i++)
+            {
+                for (int j = 1; j <= row - i; j++)
+                {
+                    Console.Write("*");
+                }
+
+                for (int k = 1; k <= 2 * i - 1; k++)
+                {
+                    if (k == 1 || k == 2 * i - 1)
+                    {
+                        Console.Write("*");
+                    }
+                    else
+                    {
+                        Console.Write(" ");
+                    }
+                }
+
+                for (int j = 1; j <= row - i; j++)
+                {
+                    Console.Write("*");
+                }
+
+                Console.WriteLine();
+            }
+            for (int i = row; i >= 1; i--)
+            {
+                for (int j = 1; j <= row - i; j++)
+                {
+                    Console.Write("*");
+                }
+
+                for (int k = 1; k <= 2 * i - 1; k++)
+                {
+                    if (k == 1 || k == 2 * i - 1)
+                    {
+                        Console.Write("*");
+                    }
+                    else
+                    {
+                        Console.Write(" ");
+                    }
+                }
+
+                for (int j = 1; j <= row - i; j++)
+                {
+                    Console.Write("*");
+                }
+
+                Console.WriteLine();
+            }
+
+        }
+
+        public static void SolidRhombus()
+        {
+            Console.WriteLine("Enter a Row");
+            int row=Convert.ToInt32(Console.ReadLine());
+
+            for(int i = 1; i <= row; i++)
+            {
+                for(int j = 1; j <= row - i; j++)
+                {
+                    Console.Write(" ");
+                }
+                for(int j = 1; j <= row; j++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine();
+            }
+        }
+        public static void HollowSolidRhombus()
+        {
+            Console.WriteLine("Enter a Row");
+            int row=Convert.ToInt32(Console.ReadLine());
+
+            for(int i = 1; i <= row; i++)
+            {
+                for(int j = 1; j <= row - i; j++)
+                {
+                    Console.Write(" ");
+                }
+                for(int j = 1; j <= row; j++)
+                {
+                    if (i == 1 || i == row || j == 1 || j == row)
+                    {
+                        Console.Write("*");
+                    }
+                    else
+                    {
+                        Console.Write(" ");
+                    }
+                    
+                }
+                Console.WriteLine();
+            }
+        }
+
+        public static void SolidButterfly()
+        {
+            Console.WriteLine("Enter a Row");
+            int row= Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 1; i <= row; i++)
+            {
+                for (int j = 1; j <= i; j++)
+                {
+                    Console.Write("*");
+                }
+
+                for (int j = 1; j <= 2 * (row - i); j++)
+                {
+                    Console.Write(" ");
+                }
+
+                for (int j = 1; j <= i; j++)
+                {
+                    Console.Write("*");
+                }
+
+                Console.WriteLine();
+            }
+
+            for (int i = row; i >= 1; i--)
+            {
+                for (int j = 1; j <= i; j++)
+                {
+                    Console.Write("*");
+                }
+
+                for (int j = 1; j <= 2 * (row - i); j++)
+                {
+                    Console.Write(" ");
+                }
+
+                for (int j = 1; j <= i; j++)
+                {
+                    Console.Write("*");
+                }
+
+                Console.WriteLine();
+            }
+        }
+
+        public static void HollowSolidButterfly()
+        {
+            Console.WriteLine("Enter a Row");
+            int row= Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 1; i <= row; i++)
+            {
+                for (int j = 1; j <= i; j++)
+                {
+                    if (i == 1 || j == 1 || j == i)
+                    {
+                        Console.Write("*");
+                    }
+                    else
+                    {
+                        Console.Write(" ");
+                    }
+                }
+
+                for (int j = 1; j <= 2 * (row - i); j++)
+                {
+                    Console.Write(" ");
+                }
+
+                for (int j = 1; j <= i; j++)
+                {
+                    if (i == 1  || j == 1 || j == i)
+                    {
+                        Console.Write("*");
+                    }
+                    else
+                    {
+                        Console.Write(" ");
+                    }
+                    
+                }
+
+                Console.WriteLine();
+            }
+
+            for (int i = row; i >= 1; i--)
+            {
+                for (int j = 1; j <= i; j++)
+                {
+                    if (i == 1 || j == 1 || j == i)
+                    {
+                        Console.Write("*");
+                    }
+                    else
+                    {
+                        Console.Write(" ");
+                    }
+                }
+
+                for (int j = 1; j <= 2 * (row - i); j++)
+                {
+                    Console.Write(" ");
+                }
+
+                for (int j = 1; j <= i; j++)
+                {
+                    if (i == 1 || j == 1 || j == i)
+                    {
+                        Console.Write("*");
+                    }
+                    else
+                    {
+                        Console.Write(" ");
+                    }
+                }
+
+                Console.WriteLine();
+            }
+        }
+
+
+        public static void DiagonalAndSidesOfARectangle()
+        {
+            Console.WriteLine("Enter a Row");
+            int row = Convert.ToInt32(Console.ReadLine());
+
+            if (row % 2 != 0)
+            {
+                for(int i = 0; i < row; i++)
+                {
+                    for(int j = 0; j < row; j++)
+                    {
+                        if (i == 0 || j == 0 || i == j || i == row - 1 || j == row - 1 || i + j == row - 1)
+                        {
+                            Console.Write("*");
+                        }
+                        else
+                        {
+                            Console.Write(" ");
+                        }
+                        
+                    }
+                    Console.WriteLine();
+                }
+            }
+            else
+            {
+                Console.Write("Give a Correct output: odd number");
+            }
+        }
+
+
         public static void pattern()
         {
             bool choice1 = true;
@@ -877,6 +1327,20 @@ namespace KD
                 Console.WriteLine("Press 28 to ZigZag");
                 Console.WriteLine("Press 29 to Diamond Using Stars");
                 Console.WriteLine("Press 30 to Hollow Diamond Using Stars");
+                Console.WriteLine("Press 31 to Fill Hollow Diamond");
+                Console.WriteLine("Press 32 to K Shap Patterns");
+                Console.WriteLine("Press 33 to K Logic");
+                Console.WriteLine("Press 34 to Solid Half Diamond Using Stars");
+                Console.WriteLine("Press 35 to Different Type Of Solid Half Diamound");
+                Console.WriteLine("Press 36 to Hollow Diamound Inscribed in a rectangle");
+                Console.WriteLine("Press 37 to Solid Rgombus");
+                Console.WriteLine("Press 38 to Hollow Solid Rgombus");
+                Console.WriteLine("Press 39 to Solid Butterfly");
+                Console.WriteLine("Press 40 to Hollow Solid Butterfly");
+                Console.WriteLine("Press 41 to Diagonal And Sides Of A Rectangle");
+
+
+                
 
 
 
@@ -975,6 +1439,40 @@ namespace KD
                     case 30:
                         Patterns.HollowDiamond();
                         break;
+                    case 31:
+                        Patterns.FillHollowDiamond();
+                        break;
+                    case 32:
+                        Patterns.KshapPattern();
+                        break;
+                    case 33:
+                        Patterns.KLogic();
+                        break;
+                    case 34:
+                        Patterns.SolidHalfDiamoundUsingstars();
+                        break;
+                    case 35:
+                        Patterns.DifferentTypeOfSolidHalfDiamound();
+                        break;
+                    case 36:
+                        Patterns.HollowDiamondInscribedInARectangle(); 
+                        break;
+                    case 37:
+                        Patterns.SolidRhombus();
+                        break;
+                    case 38:
+                        Patterns.HollowSolidRhombus();
+                        break;
+                    case 39:
+                        Patterns.SolidButterfly();
+                        break;
+                    case 40:
+                        Patterns.HollowSolidButterfly();
+                        break;
+                    case 41:
+                        Patterns.DiagonalAndSidesOfARectangle();
+                        break;
+
 
 
 
